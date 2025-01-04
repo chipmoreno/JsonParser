@@ -6,7 +6,6 @@ pokemon_names = ['bulbasaur', 'ivysaur', 'venusaur', 'charmander', 'charmeleon',
 for pokemon in pokemon_names: 
     url = f'https://pokeapi.co/api/v2/pokemon/{pokemon}'
     response = requests.get(url)
-    response = requests.get(url)
     data = response.json()
     print("Name:", data.get('name'))
     print("Base Experience:", data.get('base_experience'))
